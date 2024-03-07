@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+</head>
+
+<body>
+    <nav id="desktop-nav">
+        <div class="logo">Somya</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo">Somya</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="togglemenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#about" onclick="togglemenu()">About</a></li>
+                <li><a href="#skills" onclick="togglemenu()">Skills</a></li>
+                <li><a href="#projects" onclick="togglemenu()">Projects</a></li>
+                <li><a href="#contact" onclick="togglemenu()">Contact</a></li>
+            </div>
+        </div>
+    </nav>
+    <section id="profile">
+        <div class="section_pic-container">
+            <img src="./assets/Somya.png" alt="Somya profile">
+
+        </div>
+        <div>
+            <div class="section_text">
+                <p class="section_text_p1">Hello, I'm</p>
+                <h1 class="title">Somya</h1>
+                <p class="section_text_p2">Frontend Developer</p>
+                <div class="btn_container">
+                    <button class="btn btn-color-2" onclick="window.open('./assets/Somya Resume.pdf')">
+                        Download CV</button>
+                    <a href="#contact"><button class="btn btn-color-1">
+                            Contact Info</button></a>
+                </div>
+                <div id="socials-container">
+                    <img src="./assets/linkedin.png" alt="My linkedin Profile" class="icon"
+                        onclick="location.href='//www.linkedin.com/in/ssomya395/'" />
+
+                    <img src="./assets/github.png" alt="My Github Profile" class="icon"
+                        onclick="location.href='https://github.com/dashboard'" />
+
+                </div>
+            </div>
+
+    </section>
+
+    <section id="about">
+        <p class="section_text_p1">Get to know more</p>
+        <h1 class="title">About me</h1>
+        <div class="section-container">
+            <div class="section_pic-container">
+                <img src="./assets/Untitled design.png" alt="Profile picture" class="about-pic" />
+
+            </div>
+            <div class="about-details-container">
+                <div class="about-container">
+                    <div class="details-container">
+                        <img src="./assets/experience.png" alt="Experience icon" class="icon">
+                        <h3>Meerut Institute of Engineering and Technology</h3>
+                        <p>2020-2024<br />Bachelor's of Technology<br>CSE<br>71.2%</p>
+                    </div>
+
+                    <div class="details-container">
+                        <img src="./assets/book.png" alt="book icon" class="icon">
+                        <h3>Dayawati Modi Academy</h3>
+                        <p>12th (2020)<br>80.2%<br>10th (2018)<br>92%</p>
+                    </div>
+                </div>
+                <div class="text-container">
+                    <p>I am currently in my final year pursuing a Bachelor's degree in Computer Science and Engineering.
+                        My journey in this field has been nothing short of exhilarating, and I am enthusiastic about the
+                        opportunities and challenges that the final year holds.
+                        As a final-year student, I am excited to apply the knowledge and skills I've acquired throughout
+                        my academic journey to real-world scenarios.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#skills'" />
+    </section>
+
+    <section id="skills">
+        <p class="section_text_p1">Explore My</p>
+        <h1 class="title">Skills</h1>
+
+
+        <container class="skills">
+            <div class="skill">
+                <img src="./assets/html.png" alt="html" class="icon">
+                <h3>HTML</h3>
+            </div>
+
+
+
+            <div class="skill">
+                <img src="./assets/css.png" alt="html" class="icon">
+                <h3>CSS</h3>
+            </div>
+
+
+            <div class="skill">
+                <img src="./assets/javascript.png" alt="html" class="icon">
+
+                <h3>JavaScript</h3>
+            </div>
+
+            <div class="skill">
+                <img src="./assets/bootstrap.png" alt="html" class="icon">
+
+                <h3>Bootstrap</h3>
+            </div>
+
+            <div class="skill">
+                <img src="./assets/react.png" alt="html" class="icon">
+
+                <h3>React</h3>
+            </div>
+
+            <div class="skill">
+                <img src="./assets/nodejs.png" alt="html" class="icon">
+
+                <h3>Nodejs</h3>
+            </div>
+
+            <div class="skill">
+                <img src="./assets/githubnew.png" alt="html" class="icon">
+
+                <h3>Git and Github</h3>
+            </div>
+
+        </container>
+
+        <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#projects'" />
+    </section>
+
+    <section id="projects">
+        <p class="section_text_p1">Browse my Recent</p>
+        <h1 class="title">Projects</h1>
+
+
+        <div class="card-container">
+
+            <div class="card">
+                <img src="/assets/project3.jpeg" alt="Image" class="card-image">
+                <div class="card-text">
+                    <p>Modern UI/UX website using React.js</p>
+                </div>
+                <div class="card-btn">
+                    <a href="https://github.com/Somya148/gpt3"><button class="project-btn">Github</button></a>
+                    <a href="https://unique-sherbet-3162fe.netlify.app/"><button
+                            class="project-btn">LiveLink</button></a>
+                </div>
+            </div>
+
+
+            <div class="card">
+                <img src="/assets/project4.jpeg" alt="Image" class="card-image">
+                <div class="card-text">
+                    <p>Landing page using Bootstrap Framework.</p>
+                </div>
+                <div class="card-btn">
+                    <a href="https://github.com/Somya148/Coffee-Page"><button class="project-btn">Github</button></a>
+                    <a href="https://warm-frangipane-55bad4.netlify.app/"><button
+                            class="project-btn">LiveLink</button></a>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="/assets/project2.jpeg" alt="Image" class="card-image">
+                <div class="card-text">
+                    <p>Front-end Landing Page using HTML,CSS and JavaScript.</p>
+                </div>
+                <div class="card-btn">
+                    <a href="https://github.com/Somya148/FITBIT"><button class="project-btn">Github</button></a>
+                    <a href="https://somya148.github.io/FITBIT/"><button class="project-btn">LiveLink</button></a>
+                </div>
+            </div>
+        </div>
+
+        <p class="section_text_p1">Some</p>
+        <h1 class="title">Mini Projects</h1>
+
+        <div class="card-container">
+            <div class="card">
+                <img src="/assets/miniproject1.png" alt="Image" class="card-image">
+                <div class="card-text">
+                    <p>Image Slider using HTML,CSS and JavaScript.</p>
+                </div>
+                <div class="card-btn">
+                    <a href="https://github.com/Somya148/Image-Slider"><button class="project-btn">Github</button></a>
+                    <a href="https://tangerine-pika-3a768d.netlify.app/"><button
+                            class="project-btn">LiveLink</button></a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="/assets/miniproject2.png" alt="Image" class="card-image">
+                <div class="card-text">
+                    <p>QR code generator using HTML,CSS and JavaScript.</p>
+                </div>
+                <div class="card-btn">
+                    <a href="https://github.com/Somya148/QR-code-generator"><button
+                            class="project-btn">Github</button></a>
+                    <a href="https://somya148.github.io/QR-code-generator/"><button
+                            class="project-btn">LiveLink</button></a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="/assets/project1.jpeg" alt="Image" class="card-image">
+                <div class="card-text">
+                    <p>Responsive Navigation-bar using HTML,CSS and JavaScript.</p>
+                </div>
+                <div class="card-btn">
+                    <a href="https://github.com/Somya148/Responsive-Navbar"><button
+                            class="project-btn">Github</button></a>
+                    <a href="https://glowing-licorice-2785ed.netlify.app/"><button
+                            class="project-btn">LiveLink</button></a>
+                </div>
+            </div>
+
+
+
+        </div>
+
+
+        <section id="contact">
+            <p class="section_text_p1">Get in touch</p>
+            <h1 class="title">Contact Me</h1>
+            <div class="contact-info-upper-container">
+                <div class="contact-info-container">
+                    <img src="./assets/email.png" alt="email-icon" class="icon contact-icon" />
+                    <p><a href="mailto:ssomya395@gmail.com">ssomya395@gmail.com</a></p>
+                </div>
+                <div class="contact-info-container">
+                    <img src="./assets/linkedin.png" alt="linkedin-icon" class="icon contact-icon">
+                    <p><a href="https://www.linkedin.com">LinkedIn</a></p>
+                </div>
+            </div>
+
+
+
+        </section>
+
+        <footer>
+            <nav>
+                <div class="nav-links-container">
+                    <ul class="nav-links">
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+            </nav>
+            <!-- <p>Copyright &#169; 2023 Somya.All Rights Reserved.</p> -->
+        </footer>
+        <script src="script.js"></script>
+</body>
+
+</html>
