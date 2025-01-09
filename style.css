@@ -597,3 +597,12 @@ footer p {
 .card-btn button:hover {
     background-color: #111111;
 }
+
+/* adding animation */
+.icon {
+  transition: transform 0.3s ease-in-out; /* Smooth zoom effect */
+}
+
+.icon:hover {
+  transform: scale(1.2); /* Slightly increase size */
+}
