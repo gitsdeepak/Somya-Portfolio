@@ -39,6 +39,11 @@ nav {
     height: 17vh;
     /* vh means view height ,it means how many percent it takes of the whole page
     here it is taking the 17 % */
+    overflow: hidden;
+    background-color: #fff;
+    position: fixed;
+    top: 0;
+    width: 100%;
 }
 
 .nav-links {
